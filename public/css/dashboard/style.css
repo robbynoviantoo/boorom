@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main-container{
+    max-width: 1400px;
+    margin: auto;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav{
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: flex;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4.5rem;
+    padding-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+.container-main{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-main h1{
+    font-size: 4rem;
+    font-weight: 500;
+    max-width: 700px;
+}
+
+.container-main p{
+    font-size: 20px;
+    color: #666666;
+    padding-top: 20px;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.button{
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.button .login{
+    width: 130px;
+    height: 48px;
+    background-color: #6777ef;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button .login a{
+    color: white
+}
+
+.button .login:hover{
+    background-color: #4a5ce7;
+    
+}
+
+.button .login a:hover{
+    color: white
+}
+
+.button a{
+    color: #666666;
+}
+
+.button a:hover{
+    color: black;
+}
+
+.img img{
+    max-width: 500px;
+    min-width: 300px;
+    height: auto;
+}
+
+
+.gradient-1 {
+  position: absolute;
+  width: 304px;
+  height: 100vh;
+  left: 30%;
+  top: 10%;
+  z-index: -1;
+  background: rgba(45, 72, 152, 0.75);
+  filter: blur(200px);
+  transform: rotate(-53.13deg);
+}
+
+@media only screen and (max-width: 1500px){
+    nav{
+        padding-inline: 24px;
+    }
+
+    main{
+        padding-inline: 24px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .gradient-1 {
+        position: fixed;
+      }
+
+    .img img{
+        width: 380px;
+    }
+    .container-main h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    
+    .container-main p{
+        font-size: 20px;
+        color: #666666;
+        padding-top: 20px;
+        font-weight: 400;
+        max-width: 700px;
+    }
+}
+
+@media only screen and (max-width: 560px){
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .container-main h1{
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .container-main{
+        display: flex;
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img img{
+        width: 340px;
+        padding-top: 30px;
+    }
+}
